@@ -1,3 +1,25 @@
 span{
     color: orange;
 }
+
+section{
+    background-color:yellow;
+    background-image: url("../images/main-visual.png");
+    /* 高さ */
+    height: 400px;
+    /* 幅 */
+    width: 100%;
+}
+
+div{
+    /* 最大でも1000pxまで */
+    max-width:1000px;
+}
+
+p{
+    color: white;
+}
+
+a{
+    color: white;
+}
