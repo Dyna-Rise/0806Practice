@@ -3,8 +3,12 @@ span{
 }
 
 section{
-    background-color:yellow;
+    /* background-color:yellow; */
     background-image: url("../images/main-visual.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* ポジション 左右 上下 */
+    background-position: center center;
     /* 高さ */
     height: 400px;
     /* 幅 */
@@ -22,4 +26,14 @@ p{
 
 a{
     color: white;
+    /* 背景色をオレンジ */
+    background-color: orange;
+    /* 下線を無くす */
+    text-decoration: none;
+    /* 太字 */
+    font-weight: bold;
+    /* 内側の余白 */
+    padding:3% 5%; /*上下 左右*/
+    /* 角の丸み 左上 右上 右下 左下*/
+    border-radius: 8px;
 }
