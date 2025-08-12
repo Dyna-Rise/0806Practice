@@ -2,7 +2,14 @@ span{
     color: orange;
 }
 
-section{
+img{
+    /* 親の幅以上に多くならない */
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /* 大きさによって比率は崩さない 初期値中央を残す*/
+}
+
+.main-visual{
     /* background-color:yellow; */
     background-image: url("../images/main-visual.png");
     background-repeat: no-repeat;
@@ -75,3 +82,12 @@ ul {
     list-style-type: none;
     gap:10px; /*flexの子要素の隙間を指定*/
 }
+
+.gallery{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+}
+
+/* --------------------------------------- */
+
