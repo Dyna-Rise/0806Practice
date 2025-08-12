@@ -61,3 +61,17 @@ p{
     margin: 20px auto 0;
 
 }
+
+header{
+    display: flex;
+    /* flex-direction:column; */
+    justify-content: space-between; /* 両端揃え */
+    align-items: center; /* 要素の進行方向に対して垂直方向を中央揃え */
+    padding: 10px 40px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap:10px; /*flexの子要素の隙間を指定*/
+}
