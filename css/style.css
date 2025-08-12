@@ -89,5 +89,91 @@ ul {
     gap:30px;
 }
 
-/* --------------------------------------- */
+/* -----------------追加 ここから ------------------- */ 
 
+.container {
+     padding: 5% 3%;
+     margin: 40px 0;
+     background-color: white;
+     border-radius: 8px;
+     border: 1px solid #eee;
+     width: 100%;
+ }
+
+ /* --- 特徴セクション (display:grid) --- */
+ .features {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+     text-align: center;
+ }
+
+ .feature-item img {
+     width: 100%;
+     aspect-ratio: 10/6;
+     height:auto;
+     object-fit: cover;
+ }
+
+ /* --- 料金表 (table) --- */
+ .price-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+
+ .price-table th,
+ .price-table td {
+     border: 1px solid #ccc;
+     padding: 15px;
+     text-align: left;
+ }
+
+ .price-table th {
+     background-color: #f2f2f2;
+ }
+
+ /* --- 受講の流れ (ol, li) --- */
+ .flow-list {
+     list-style: decimal;
+     padding-left: 20px;
+ }
+
+ .flow-list li {
+     margin-bottom: 15px;
+ }
+
+ /* --- フォーム (form) --- */
+ .contact-form {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 20px;
+ }
+
+ .contact-form label {
+     font-weight: bold;
+ }
+
+ .contact-form input[type="text"],
+ .contact-form input[type="email"],
+ .contact-form textarea {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+
+ .contact-form input[type="submit"] {
+     width: 200px;
+     background-color: #ff6600;
+     color: white;
+     border: none;
+     padding: 15px;
+     cursor: pointer;
+     font-size: 1rem;
+     border-radius: 5px;
+     margin: 0 auto;
+ }
+
+
+/* -----------------ここまで ------------------- */
