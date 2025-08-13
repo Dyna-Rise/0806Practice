@@ -1,3 +1,25 @@
+h2{
+    font-size: 2.2rem;
+    /* text-decoration: underline; 文字への下線 */
+    border-bottom: 2px solid #f60;
+}
+
+a{
+    color: #07c;
+    text-decoration: none;
+    /* ホバーした時、どのくらいで状況が変わるのかの指定秒数 */
+    transition:.4s;
+}
+
+img{
+    border-radius: 8px;
+}
+
+/* マウスを上乗せしている最中のaのデザイン */
+a:hover{
+    color: #5af;
+}
+
 span {
     color: orange;
 }
@@ -79,6 +101,8 @@ header {
     align-items: center;
     /* 要素の進行方向に対して垂直方向を中央揃え */
     padding: 10px 40px;
+    /* 影 */
+    box-shadow:0 2px 5px #333;
 }
 
 ul {
@@ -93,6 +117,7 @@ ul {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
+    padding-bottom: 80px;
 }
 
 .gallery img:first-child {
@@ -214,6 +239,23 @@ main{
 
     background-color: #f9f9f9;
     background-color:rgb(240,240,240);
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer ul{
+    justify-content: center;
+    gap:40px;
+    margin-top: 10px;
+}
+
+footer a{
+    color: #fff;
 }
 
 
