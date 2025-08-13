@@ -47,6 +47,12 @@ img {
     padding-top: 60px;
     /* 余白計算を含み計算にする */
     box-sizing: border-box;
+    color: #fff;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
@@ -56,12 +62,12 @@ img {
 }
 
 p {
-    color: white;
-    text-align: center;
+    /* 行間 */
+    line-height: 1.8;
 }
 
 .main-catch {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bold;
 }
 
@@ -80,17 +86,15 @@ p {
     border-radius: 8px;
 
     /*性格をpやdivと同じに捻じ曲げる*/
-    display: block;
+    display: inline-block;
     /*もともとはinline*/
     /* 中央揃え */
     text-align: center;
-    /* 幅を絞る */
-    width: 30%;
     /* 外側の余白 */
     /* margin-top: 20px; */
     /* margin-right: auto; */
     /* margin-left: auto; */
-    margin: 20px auto 0;
+    margin-top: 20px;
 }
 
 header {
