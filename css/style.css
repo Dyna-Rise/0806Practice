@@ -69,7 +69,6 @@ p {
     /* margin-right: auto; */
     /* margin-left: auto; */
     margin: 20px auto 0;
-
 }
 
 header {
@@ -216,3 +215,70 @@ main{
     background-color: #f9f9f9;
     background-color:rgb(240,240,240);
 }
+
+
+ /* --- レスポンシブ対応 (スマートフォン表示) --- */
+ @media (max-width: 768px) {
+     header {
+         flex-direction: column;
+         padding: 10px 20px;
+     }
+
+     header nav ul {
+         flex-direction: column;
+         margin-top: 10px;
+         width: 100%;
+         text-align: center;
+     }
+
+     header nav li {
+         margin: 5px 0;
+     }
+
+     .main-catch{
+        font-size: 42px;
+        line-height: 1.2;
+     }
+
+     h1 {
+         font-size: 2rem;
+     }
+
+     h2 {
+         font-size: 1.8rem;
+     }
+
+     .features {
+         grid-template-columns: 1fr;
+         /* 1列にする */
+     }
+
+     main {
+         width: 100%;
+     }
+
+     section {
+         padding: 40px 15px;
+     }
+
+     .gallery {
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(3, 300px);
+     }
+
+     .gallery img:first-child {
+         grid-column: 1/2;
+         grid-row: 1/2;
+     }
+
+     .gallery img:nth-child(2) {
+         grid-column: 1/2;
+         grid-row: 2/3;
+     }
+
+     .gallery img:last-child {
+         grid-column: 1/2;
+         grid-row: 3/4;
+     }
+ }
+
